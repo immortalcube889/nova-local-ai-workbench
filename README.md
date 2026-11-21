@@ -17,6 +17,16 @@ Many assistant demos hide important engineering decisions behind a chat box. Nov
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
+## Live portfolio preview
+
+The public, read-only preview is deployed through AWS S3 and CloudFront:
+
+https://d3hwrov43atxj8.cloudfront.net
+
+It intentionally does not expose the local API, personal memory, model credentials,
+file access, trading, or private Nova integrations. Run the project locally to use
+the fully functional demonstration API.
+
 ## Run locally
 
 Requires Python 3.11+ and no third-party packages.
