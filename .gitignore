@@ -7,3 +7,12 @@ data/
 *.sqlite3
 *.db
 .DS_Store
+
+# AWS Blocks
+.blocks-sandbox
+cdk.out/
+aws-blocks/client.js
+aws-blocks/blocks.spec.json
+.bb-data/
+node_modules/
+pnpm-lock.yaml

@@ -42,6 +42,8 @@ Open `http://127.0.0.1:8080`.
 
 The included Dockerfile exposes the service on port `8080`, suitable for a container platform such as AWS App Runner, ECS/Fargate, or a development EC2 instance.
 
+The AWS Blocks migration in `aws-blocks/` hosts a **read-only public portfolio preview** through S3 and CloudFront. The preview intentionally disables memory and tool controls because it does not deploy the local Python API or any personal data. Use the Docker path for a fully functional, authenticated deployment.
+
 Before deploying:
 
 1. Build and run locally: `docker build -t nova-workbench . && docker run --rm -p 8080:8080 nova-workbench`.
