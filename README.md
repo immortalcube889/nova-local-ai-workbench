@@ -2,6 +2,8 @@
 
 A compact, local-first AI-assistant architecture demo built in Python. It demonstrates persistent SQLite memory, a transparent UI, system inspection, and approval-gated action planning without exposing personal data, credentials, or private integrations.
 
+[![Python tests](https://github.com/immortalcube889/nova-local-ai-workbench/actions/workflows/tests.yml/badge.svg)](https://github.com/immortalcube889/nova-local-ai-workbench/actions/workflows/tests.yml)
+
 > This repository is a safe portfolio edition of a larger private project. It intentionally contains no model key, trading integration, user files, chat history, or automatic file modification.
 
 ## Why this exists
@@ -22,6 +24,8 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 The public, read-only preview is deployed through AWS S3 and CloudFront:
 
 https://d3hwrov43atxj8.cloudfront.net
+
+![Screenshot of the read-only hosted Nova workbench preview](docs/preview.png)
 
 It intentionally does not expose the local API, personal memory, model credentials,
 file access, trading, or private Nova integrations. Run the project locally to use
