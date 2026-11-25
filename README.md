@@ -56,7 +56,7 @@ Open `http://127.0.0.1:8080`.
 
 The included Dockerfile exposes the service on port `8080`, suitable for a container platform such as AWS App Runner, ECS/Fargate, or a development EC2 instance.
 
-The AWS Blocks migration in `aws-blocks/` hosts a **read-only public portfolio preview** through S3 and CloudFront. The preview intentionally disables memory and tool controls because it does not deploy the local Python API or any personal data. Use the Docker path for a fully functional, authenticated deployment.
+The AWS Blocks migration in `aws-blocks/` hosts a **read-only public portfolio preview** through S3 and CloudFront. The preview intentionally disables memory and tool controls because it does not deploy the local Python API or any personal data. The Docker image runs the local demonstration API; it does not provide authentication and must not be exposed publicly without additional security work.
 
 Before deploying:
 
@@ -72,7 +72,7 @@ Before deploying:
 - Semantic search using embeddings stored in a managed vector/search service
 - A provider adapter for Bedrock or another model API
 - Structured logging, metrics, and cost limits
-- A CI workflow that runs these tests before deployment
+- A deployment pipeline that requires the existing CI tests to pass
 
 ## Portfolio talking points
 
